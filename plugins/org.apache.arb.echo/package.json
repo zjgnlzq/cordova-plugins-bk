@@ -1,0 +1,9 @@
+{
+    "version": "0.2.1",
+    "name": "org.apache.arb.echo",
+    "cordova_name": "Echo",
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

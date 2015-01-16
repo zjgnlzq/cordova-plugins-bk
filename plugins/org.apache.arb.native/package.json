@@ -1,0 +1,16 @@
+{
+    "version": "0.2.9-dev",
+    "name": "org.apache.arb.native",
+    "cordova_name": "Native",
+    "description": "Native Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "native"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": []
+}

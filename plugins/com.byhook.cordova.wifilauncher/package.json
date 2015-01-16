@@ -1,0 +1,14 @@
+{
+    "version": "0.0.3",
+    "name": "com.byhook.cordova.wifilauncher",
+    "cordova_name": "WifiLauncher",
+    "description": "Wifi Launcher Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "wifi",
+        "launcher",
+        "settings",
+        "menu"
+    ],
+    "engines": []
+}

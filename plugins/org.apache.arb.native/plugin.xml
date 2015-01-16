@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="org.apache.arb.native"
+        version="0.2.9-dev">
+    <name>Native</name>
+    <description>Native Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,native</keywords>
+    <js-module src="www/Native.js" name="native">
+        <clobbers target="cordova.plugins.Native" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Native" >
+                <param name="android-package" value="org.apache.arb.native.Native"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Native.java" target-dir="src/org/apache/arb/native" />
+    </platform>
+    
+    <!-- ios -->
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="Native">
+                <param name="ios-package" value="Native" /> 
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Native.h" />
+        <source-file src="src/ios/Native.m" />
+    </platform>
+</plugin>
